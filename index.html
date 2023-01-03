@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #f1f4c6;
+        }
+        #navbar{
+            background:#837d7d;
+            height: 50px;
+          
+        }
+        #navbar nav{
+            padding: 0.5px;
+        }
+        #navbar nav ul{
+            list-style: none;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        #navbar nav ul li{
+            margin : 0 20px;
+            
+        }
+        #navbar nav ul li a{
+            text-decoration: none;
+            color: #f1f4c6;
+        }
+        #navbar nav ul li a:hover{
+            background: #aaa6a4;
+            cursor: pointer;
+            
+
+        }
+        /* table */
+        table{
+            font-style: oblique;
+            border: 1px ;
+            margin-top: 100px;
+            height: 100px;
+            margin-left: 40%;  
+            width: 400px;  
+            background: linear-gradient(#f1f4c6, #aaa6a4);  
+        }
+        table tr td,th{
+            border: 1px ;
+            margin-top: 50px;
+            height: 50px;
+            width: auto;
+            text-align: center;
+        }
+        /* form */
+        form{
+            border: 1px ;
+            margin-top: 100px;
+            margin-left: 40%;  
+            width: 400px;  
+            background: linear-gradient(#f1f4c6, #aaa6a4); 
+        }
+        form fieldset{
+            border: none;
+            font-style: oblique;
+            font-size: 1.3rem ;
+            font-weight: bold;
+            
+        }
+        form div{
+            padding: 20px ;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        form .oma{
+            margin-right: 150px;
+        }
+        form label{
+            font-style: oblique;
+            font-size: 1rem ;
+            font-weight: bold;
+        }
+        form input{
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 80px;
+        }
+        #btn{
+           margin-left: 35%;
+           height: 30px;
+           width: 100px;
+           border: 1px ;
+           border-radius: 20px;
+           background: #837d7d;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">ACCEUIL</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ECOLE</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- TABLE -->
+        <table>
+            <tr>
+                <th>NOM</th>
+                <th>PRENOM</th>
+                <th>GROUP</th>
+            </tr>
+            <tr>
+                <td>ABIDY</td>
+                <td>AAFANE</td>
+                <td>DD</td>
+            </tr>
+            <tr>
+                <td>OMAYMA</td>
+                <td>NAJAT</td>
+                <td>DD</td>
+            </tr>
+        </table>
+        <!-- FORMULE -->
+        <form action="">
+            <fieldset>Informations Personnelles :</fieldset>
+            <div class="form-group row">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+            </div>
+            <div class="form-group row">
+                <label for="Prenom">Prenom</label>
+                <input type="text" id="Prenom">
+            </div>
+            <div class="form-group row">
+                <label for="group">Group</label>
+                <input type="text" id="group">
+            </div>
+                <div class="form-group row" >
+                <label for="date">Date de Naissance</label>
+                <input type="date" id="date" >
+            </div>
+            <div class="form-group row">
+                <button type="submit" id="btn">Submit</button>
+                
+            </div>
+        </form>
+
+</body>
+</html>
